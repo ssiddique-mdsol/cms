@@ -1,9 +1,16 @@
 <h1>List </h1>
 <ul>
-<% list = ['car', 'bus', 'bike', 'scooter'] %>
-<% list.each do |v| %>
+
+<% @array.each do |v| %>
     <li>
         <%= "List: #{v}" %>
     </li>
 <% end %>
-</li>
+
+</ul>
+
+<%= "Id: #{@id}" %>
+<br/>
+<%= "Page: #{@page}" %>
+<br/>
+<%= link_to("Home page with parameter",{action: 'index', page: 1, id: 5} ) %>
